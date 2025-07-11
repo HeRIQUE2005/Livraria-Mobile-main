@@ -1,4 +1,11 @@
-import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import {
+    StyleSheet,
+    Text,
+    View,
+    Image,
+    TouchableOpacity,
+    TextInput,
+} from "react-native";
 import React from "react";
 
 const Header = () => {
@@ -8,10 +15,14 @@ const Header = () => {
                 <Image source={require("../../assets/menu-hamburguer.png")} />
             </View>
             <View>
-                <TouchableOpacity style={styles.PesquisarContainer}>
-                    <Text style={styles.Pesquisar}>Pesquise Aqui</Text>
-                    <Image source={require("../../assets/lupa.png")} />
-                </TouchableOpacity>
+                <TextInput
+                    style={styles.PesquisarContainer}
+                    placeholder="Pesquise Aqui"
+                />
+                <Image
+                    style={styles.Pesquisar}
+                    source={require("../../assets/lupa.png")}
+                />
             </View>
             <View>
                 <Image source={require("../../assets/carrinho-de-compras.png")} />
@@ -22,4 +33,8 @@ const Header = () => {
 
 export default Header;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+    PesquisarContainer:{
+        
+    }
+});
