@@ -1,15 +1,15 @@
-import { StyleSheet, View, Image, TouchableOpacity } from "react-native";
+import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native";
 
 const Categoria = () => {
     return (
         <View style={styles.Container}>
             <View>
-
                 <TouchableOpacity onPress={Categoria}>
                     <Image
                         style={styles.LogoManga}
                         source={require("../../assets/LogoManga.png")}
-                    />
+                        />
+                        <Text style={styles.TextManga}>Mangas</Text>
                 </TouchableOpacity>
 
 
@@ -21,9 +21,20 @@ const Categoria = () => {
                     style={styles.LogoHq}
                     source={require("../../assets/HqImagens.png")}
                 />
+                <Text style={styles.Quadrinhos}>Hq's</Text>
             </TouchableOpacity>
 
 
+            </View>
+            <View>
+                <TouchableOpacity>
+                    <Image
+                        style={styles.LogoLiteratura}
+                        source={require("../../assets/LiteraturaBR.png")}
+                        
+                    />
+                    <Text style={styles.LiteraturaBr}>Brasil</Text>
+                </TouchableOpacity>
             </View>
         </View>
     )
@@ -41,15 +52,37 @@ const styles = StyleSheet.create({
     LogoManga: {
         alignItems: "center",
         marginTop: 41,
-        marginHorizontal: 31
+        marginHorizontal: 40
 
     },
     LogoHq: {
         lignItems: "center",
         marginTop: 36,
-        marginRight: 159
-    }
+        marginRight: 40
+    },
 
+    LogoLiteratura: {
+        lignItems: "center",
+        marginTop: 36,
+        flexDirection: "row",
+        marginRight: 40
+    },
 
+    TextManga: {
+        justifyContent: "center",
+        alignItems: "center",
+        marginHorizontal: 48
+    },
 
+    Quadrinhos: {
+        justifyContent: "center",
+        alignItems: "center",
+        marginHorizontal: 20
+    },
+
+    LiteraturaBr: {
+        justifyContent: "center",
+        alignItems: "center",
+        marginHorizontal: 17,
+        }
 })
