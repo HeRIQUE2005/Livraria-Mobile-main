@@ -56,13 +56,13 @@ const styles = StyleSheet.create({
 
     },
     LogoHq: {
-        lignItems: "center",
+        alignItems: "center",
         marginTop: 36,
         marginRight: 40
     },
 
     LogoLiteratura: {
-        lignItems: "center",
+        alignItems: "center",
         marginTop: 36,
         flexDirection: "row",
         marginRight: 40
