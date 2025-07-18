@@ -3,22 +3,28 @@ import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native";
 const TopVendas = () => {
     return (
         <View style={styles.ContainerTopVendas} >
-            <View>
+            <View style={styles.HpDoAmorContainer}>
 
                 <Image
                     style={styles.HpDoAmor}
                     source={require("../../assets/hipotesedoamor.png")}
                 />
-                <Text style={styles.TextoHpDoAmor}> Hipotese do Amor </Text>
+
 
             </View>
 
-            <View>
+            <View style={styles.HqAranhaContainer}>
                 <Image
                     style={styles.HqAranha}
                     source={require("../../assets/hqhomemaranha.png")}
                 />
-                <Text style={styles.TextHqAranha} >Hq Homem Aranha</Text>
+
+            </View>
+            <View style={styles.AliceNoPaisDasMaravilhas}>
+                <Image
+                    style={styles.AlicePDMaravilhas}
+                    source={require("../../assets/alicenopaisdasmaravilhas.png")}
+                />
             </View>
         </View>
 
@@ -28,16 +34,15 @@ const TopVendas = () => {
 export default TopVendas;
 
 const styles = StyleSheet.create({
-    ContainerTopVendas: {
+
+HpDoAmorContainer: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
         marginHorizontal: 20,
-        marginVertical: 30,
+        marginVertical: 20,
         padding: 10
-    },
-
-
+},
 
     HpDoAmor: {
         width: 100,
@@ -48,22 +53,14 @@ const styles = StyleSheet.create({
         marginTop: 40
     },
 
-    TextoHpDoAmor: {
-        marginHorizontal: 20
+    HqAranhaContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center'
     },
 
-    HqAranha: {
-        width: 100,
-        height: 150,
-        marginHorizontal: 20,
-        borderRadius: 0,
-        resizeMode: 'cover',
-        marginTop: 40
-    },
 
-    TextHqAranha:{
-        marginHorizontal: 20
-    },
+
 
 
 
