@@ -1,19 +1,19 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import Header from '../../Components/Header'
-import Categoria from '../../Components/Categoria'
-import TopVendas from '../../Components/TopVendas'
+import { ScrollView, StyleSheet, Text, View } from "react-native";
+import React from "react";
+import Header from "../../Components/Header";
+import Categoria from "../../Components/Categoria";
+import TopVendas from "../../Components/TopVendas";
 
 const Dashboard = () => {
   return (
-    <View>
-<Header/>
-<Categoria/>
-<TopVendas/>
-    </View>
-  )
-}
+    <ScrollView>
+      <Header />
+      <Categoria />
+      <TopVendas />
+    </ScrollView>
+  );
+};
 
-export default Dashboard
+export default Dashboard;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
