@@ -4,7 +4,7 @@ const TopVendas = () => {
     return (
         <View style={styles.ContainerTopVendas}>
             <View style={styles.ImagensContainer}>
-                <Text >Top Vendas da Semana</Text>
+                <Text>Top Vendas da Semana</Text>
             </View>
 
             <View>
