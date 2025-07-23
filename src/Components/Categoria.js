@@ -1,7 +1,8 @@
-import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native";
+import { StyleSheet, View, Image, TouchableOpacity, Text, ScrollView } from "react-native";
 
 const Categoria = () => {
     return (
+        <ScrollView>
         <View style={styles.Container}>
             <View>
                 <TouchableOpacity onPress={Categoria}>
@@ -37,6 +38,7 @@ const Categoria = () => {
                 </TouchableOpacity>
             </View>
         </View>
+        </ScrollView>
     )
 };
 

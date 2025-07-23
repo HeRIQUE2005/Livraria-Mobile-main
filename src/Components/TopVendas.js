@@ -1,12 +1,11 @@
-import { StyleSheet, View, Image, TouchableOpacity, Text } from "react-native";
+import { StyleSheet, View, Image, TouchableOpacity, Text, ScrollView } from "react-native";
 
 const TopVendas = () => {
     return (
-        <View style={styles.ContainerTopVendas}>
+        <ScrollView style={styles.ContainerTopVendas}>
             <View style={styles.ImagensContainer}>
                 <Text>Top Vendas da Semana</Text>
             </View>
-
             <View>
                 <View style={styles.HpDoAmorContainer}>
                     <Image
@@ -34,7 +33,7 @@ const TopVendas = () => {
                     />
                 </View>
             </View>
-        </View>
+        </ScrollView>
     );
 };
 

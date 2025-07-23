@@ -1,7 +1,8 @@
-import { StyleSheet, View, Image, TextInput } from "react-native";
+import { StyleSheet, View, Image, TextInput, ScrollView } from "react-native";
 
 const Header = () => {
     return (
+        <ScrollView>
         <View style={styles.PaginaContainer}>
             <View>
                 <Image
@@ -23,6 +24,7 @@ const Header = () => {
                 <Image source={require("../../assets/carrinho-de-compras.png")} />
             </View>
         </View>
+        </ScrollView>
     );
 };
 
