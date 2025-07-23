@@ -7,29 +7,29 @@ const TopLeituraDoMes = () => {
                 <Text>Top leitura da semana</Text>
             </View>
             <View>
-                <View style={styles.HpDoAmorContainer}>
+                <View style={styles.SoloLevingContainer}>
                     <Image
-                        style={styles.HpDoAmor}
+                        style={styles.Sololeving}
                         source={require("../../assets/SoloLeving.png")}
                     />
                 </View>
 
-                <View style={styles.HqAranhaContainer}>
+                <View style={styles.BibliaContainer}>
                     <Image
-                        style={styles.HqAranha}
-                        source={require("../../assets/hqhomemaranha.png")}
+                        style={styles.Biblia}
+                        source={require("../../assets/biblia.png")}
                     />
                 </View>
                 <View style={styles.AliceNoPaisDasMaravilhas}>
                     <Image
                         style={styles.AlicePDMaravilhas}
-                        source={require("../../assets/alicenopaisdasmaravilhas.png")}
+                        source={require("../../assets/calice-de-fogo.png")}
                     />
                 </View>
                 <View style={styles.NaMinhaPeleContainer}>
                     <Image
                         style={styles.NaMinhaPele}
-                        source={require("../../assets/NaMinhaPele.png")}
+                        source={require("../../assets/PequenoPrincipe.png")}
                     />
                 </View>
             </View>
@@ -40,7 +40,7 @@ const TopLeituraDoMes = () => {
 export default TopLeituraDoMes;
 
 const styles = StyleSheet.create({
-    HpDoAmorContainer: {
+    SoloLevingContainer: {
         marginLeft: 50,
         marginTop: 30,
     },
