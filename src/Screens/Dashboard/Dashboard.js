@@ -14,6 +14,6 @@ const Dashboard = () => {
     </ScrollView>
   );
 };
-
+  
 export default Dashboard;
 

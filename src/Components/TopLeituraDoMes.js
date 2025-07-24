@@ -20,15 +20,15 @@ const TopLeituraDoMes = () => {
                         source={require("../../assets/biblia.png")}
                     />
                 </View>
-                <View style={styles.AliceNoPaisDasMaravilhas}>
+                <View style={styles.calicedefogoContainer}>
                     <Image
-                        style={styles.AlicePDMaravilhas}
+                        style={styles.calicedefogo}
                         source={require("../../assets/calice-de-fogo.png")}
                     />
                 </View>
-                <View style={styles.NaMinhaPeleContainer}>
+                <View style={styles.PequenoPrincipeContainer}>
                     <Image
-                        style={styles.NaMinhaPele}
+                        style={styles.PequenoPrincipe}
                         source={require("../../assets/PequenoPrincipe.png")}
                     />
                 </View>
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         flex: 1, justifyContent: "center", alignItems: "center", marginTop: 50
     },
 
-    HpDoAmor: {
+    Sololeving: {
         width: 100,
         height: 150,
         marginHorizontal: 30,
@@ -57,36 +57,36 @@ const styles = StyleSheet.create({
         position: "relative",
     },
 
-    HqAranhaContainer: {
+    BibliaContainer: {
         marginLeft: 250,
         position: "absolute",
         marginTop: 70,
     },
 
-    HqAranha: {
+    Biblia: {
         width: 100,
         height: 150,
     },
 
-    AliceNoPaisDasMaravilhas: {
+    calicedefogoContainer: {
         position: "relative",
         marginTop: 30,
         left: 50,
     },
 
-    AlicePDMaravilhas: {
+    calicedefogo: {
         width: 100,
         height: 150,
         marginHorizontal: 30,
     },
 
-    NaMinhaPeleContainer: {
+    PequenoPrincipeContainer: {
         position: "absolute",
         marginTop: 250,
         left: 220,
     },
 
-    NaMinhaPele: {
+    PequenoPrincipe: {
         width: 100,
         height: 150,
         marginHorizontal: 30,
