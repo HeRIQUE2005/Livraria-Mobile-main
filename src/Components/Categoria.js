@@ -2,15 +2,13 @@ import { StyleSheet, View, Image, TouchableOpacity, Text, ScrollView } from "rea
 
 
     const Categoria = ({ navigation }) => {
-        const navigate = () => {
-            navigation.navigate("Livros")
 
-        }
+        
         return (
             <ScrollView>
                 <View style={styles.Container}>
                     <View>
-                        <TouchableOpacity onPress={navigate}>
+                        <TouchableOpacity onPress={""}>
                             <Image
                                 style={styles.LogoManga}
                                 source={require("../../assets/LogoManga.png")}
@@ -22,7 +20,7 @@ import { StyleSheet, View, Image, TouchableOpacity, Text, ScrollView } from "rea
                     </View>
 
                     <View>
-                        <TouchableOpacity onPress={navigate} >
+                        <TouchableOpacity onPress={""} >
                             <Image
                                 style={styles.LogoHq}
                                 source={require("../../assets/HqImagens.png")}
@@ -33,7 +31,7 @@ import { StyleSheet, View, Image, TouchableOpacity, Text, ScrollView } from "rea
 
                     </View>
                     <View>
-                        <TouchableOpacity onPress={navigate}>
+                        <TouchableOpacity onPress={""}>
                             <Image
                                 style={styles.LogoLiteratura}
                                 source={require("../../assets/LiteraturaBR.png")}

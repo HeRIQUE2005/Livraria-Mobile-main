@@ -1,4 +1,4 @@
-import { ScrollView } from "react-native";
+import { ScrollView, View } from "react-native";
 import Header from "../../Components/Header";
 import Categoria from "../../Components/Categoria";
 import TopVendas from "../../Components/TopVendas";
@@ -7,13 +7,13 @@ import EscolhaManga from "../../Components/EscolhaManga";
 
 const Dashboard = () => {
   return (
-    <ScrollView>
+    <View>
       <Header />
       <Categoria />
       <TopVendas />
-      <TopLeituraDoMes/>
-      <EscolhaManga/>
-    </ScrollView>
+      {/* <TopLeituraDoMes/> */}
+      {/* <EscolhaManga/> */}
+    </View>
   );
 };
   

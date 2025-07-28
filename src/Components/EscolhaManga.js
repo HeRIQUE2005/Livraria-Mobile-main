@@ -1,17 +1,32 @@
 import { StyleSheet, View, Image, TouchableOpacity, Text, ScrollView } from "react-native";
 
-const Livros = () => {
+
+const EscolhaManga = ({ navigation }) => {
+
+    
     return (
-        <ScrollView >
+        <ScrollView>
             <View>
-                <Text>aaaaaaa</Text>
+                <View>
+                    <TouchableOpacity onPress={""}>
+                        <Text>Voltar</Text>
+                    </TouchableOpacity>
+                </View>
+
+
+
+
+
+
             </View>
         </ScrollView>
     );
-};
-
-export default Livros;
+    
+}
 
 const styles = StyleSheet.create({
-
+    
 });
+
+
+export default EscolhaManga  
