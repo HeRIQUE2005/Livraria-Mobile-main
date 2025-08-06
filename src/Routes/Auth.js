@@ -2,6 +2,7 @@ import { StyleSheet } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Dashboard from "../Screens/Dashboard/Dashboard";
 import DetalheProdutos from "../Screens/Dashboard/DetalheProdutos";
+import DetalheVendas from "../Screens/Dashboard/DetalheVendas";
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +18,11 @@ const Auth = () => {
         name="DetalheProdutos"
         component={DetalheProdutos}
         options={{ headerShown: false }}
+      />
+      <Stack.Screen
+      name="DetalheVendas"
+      component={DetalheVendas}
+      options={{headerShown: false}}
       />
     </Stack.Navigator>
   );

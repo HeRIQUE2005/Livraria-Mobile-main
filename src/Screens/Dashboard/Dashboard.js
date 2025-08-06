@@ -1,4 +1,4 @@
-import { ScrollView, View } from "react-native";
+import { FlatList, SafeAreaView, ScrollView, View } from "react-native";
 import Header from "../../Components/Header";
 import Categoria from "../../Components/Categoria";
 import TopVendas from "../../Components/TopVendas";
@@ -7,15 +7,17 @@ import EscolhaManga from "../../Components/EscolhaManga";
 
 const Dashboard = () => {
   return (
-    <View>
+    
+    <ScrollView>
+      
       <Header />
       <Categoria />
-      <TopVendas />
-      {/* <TopLeituraDoMes/> */}
-      {/* <EscolhaManga/> */}
-    </View>
+        <TopVendas />
+        <TopLeituraDoMes />
+        {/* <EscolhaManga/> */}
+    </ScrollView>
+   
   );
 };
-  
-export default Dashboard;
 
+export default Dashboard;
